@@ -1,0 +1,27 @@
+﻿<Window x:Class="hw2.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:local="clr-namespace:hw2"
+ mc:Ignorable="d"
+ Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="請輸入數字:" HorizontalAlignment="Left" Margin="141,114,0,0"
+VerticalAlignment="Top" FontSize="16" Foreground="Red" FontWeight="Bold"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="240,121,0,0"
+TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Background="#FF9CD0D4"/>
+        <Button Content="確定" HorizontalAlignment="Left" Margin="564,121,0,0"
+VerticalAlignment="Top" Width="63" Click="Button_Click" Background="#FFB3EFAB"></Button>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="141,159,0,0"
+TextWrapping="Wrap" VerticalAlignment="Top" Width="486" Height="193" FontFamily="Arial 
+Black">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF5D9AF"/>
+                    <GradientStop Color="#FF415B9A" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
